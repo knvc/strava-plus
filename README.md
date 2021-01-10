@@ -1,6 +1,13 @@
-# Getting Started with Create React App
+# Strava Plus :runner:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A web application that adds extra running features to Strava.
+
+## Features
+
+- The user can login to the app by using his/her client id/secret
+- The user can view a list of his/her running activities
+- The user can view a detailed view of a selected activity
+- ...
 
 ## Available Scripts
 
