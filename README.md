@@ -9,6 +9,8 @@ A web application that adds extra running features to Strava.
 - The user can view a detailed view of a selected activity
 - ...
 
+Thinking about an awesome feature? Add a request: https://forms.gle/DzLHn7F6AJqZzMS97
+
 ## Available Scripts
 
 In the project directory, you can run:
