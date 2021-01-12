@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import logo from "../logo/logo.svg";
 
 class Login extends Component {
-    state = {  }
     render() { 
         return ( 
             <React.Fragment>
