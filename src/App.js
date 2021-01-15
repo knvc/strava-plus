@@ -3,10 +3,6 @@ import Login from "./components/Login.jsx";
 import React, { Component } from "react";
 
 class App extends Component {
-  state = {
-    client_id: "",
-    client_secret: "",
-  };
   render() {
     return (
       <React.Fragment>
