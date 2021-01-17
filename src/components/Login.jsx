@@ -3,13 +3,26 @@ import React, { Component } from 'react';
 import logo from "../logo/logo.svg";
 
 class Login extends Component {
-    state = {
-        client_id: "",
-        client_secret: "",
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            client_id: "",
+            client_secret: "",
+        }
+
+        const urlParams = new URLSearchParams(window.location.search);
+    
+        if(urlParams.get('code') && urlParams.get('scope')) {
+            console.log("proceed to next component");
+        }
     }
     handleAuthorize = (e) => {
         e.preventDefault();
-        console.log("authorize", this.state.client_id, this.state.client_secret);
+
+        window.location = 'https://www.strava.com/oauth/authorize?client_id=' + this.state.client_id + 
+        '&response_type=code&redirect_uri=http://localhost:3000/index.html' + 
+        '&approval_prompt=auto&scope=read,read_all,profile:read_all,profile:write,activity:read,activity:read_all,activity:write';
     }
     render() { 
         return ( 
