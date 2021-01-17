@@ -11,6 +11,14 @@ class Login extends Component {
             client_secret: "",
         }
 
+        if (localStorage.getItem('client_id')) {
+            this.state.client_id = JSON.parse(localStorage.getItem('client_id'));
+        }
+
+        if (localStorage.getItem('client_secret')) {
+            this.state.client_secret = JSON.parse(localStorage.getItem('client_secret'));
+        }
+
         const urlParams = new URLSearchParams(window.location.search);
     
         if(urlParams.get('code') && urlParams.get('scope')) {
@@ -19,6 +27,9 @@ class Login extends Component {
     }
     handleAuthorize = (e) => {
         e.preventDefault();
+
+        localStorage.setItem('client_id', JSON.stringify(this.state.client_id));
+        localStorage.setItem('client_secret', JSON.stringify(this.state.client_secret));
 
         window.location = 'https://www.strava.com/oauth/authorize?client_id=' + this.state.client_id + 
         '&response_type=code&redirect_uri=http://localhost:3000/index.html' + 
