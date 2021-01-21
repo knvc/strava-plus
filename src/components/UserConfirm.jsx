@@ -13,9 +13,27 @@ class UserConfirm extends Component {
             this.authorize(urlParams.get('code'));
         }
     }
-    authorize(code) {
-        console.log('authorize');
-    }
+    async authorize(code) {
+        const response = await fetch('https://www.strava.com/oauth/token', {
+            method: 'post',
+            headers: {
+                'accept': 'application/json',
+                'content-type': 'application/json'
+            },
+                body: JSON.stringify({
+                    client_id: JSON.parse(localStorage.getItem('client_id')),
+                    client_secret: JSON.parse(localStorage.getItem('client_secret')),
+                    code : code,
+                    grant_type : 'authorization_code'
+                })
+            }
+        );
+
+        const fetchData = await response.json();
+        console.log(fetchData);
+        this.setState({ user : fetchData, loading : false });
+
+        }
     render() { 
         return ( 
             <React.Fragment>
