@@ -41,7 +41,10 @@ class UserConfirm extends Component {
                     <h2 className="h3 mb-3 font-weight-normal">Loading...</h2>
                 ) : ( 
                     this.state.user.athlete ? (
-                        <h2 className="h3 mb-3 font-weight-normal">Are you {this.state.user.athlete.firstname}?</h2>
+                        <React.Fragment>
+                            <h3 className="h3 mb-3 font-weight-normal">Are you {this.state.user.athlete.firstname} {this.state.user.athlete.lastname}?</h3>
+                            <img src={this.state.user.athlete.profile} />
+                        </React.Fragment>
                     ) : (
                         <h2 className="h3 mb-3 font-weight-normal">Error: Could not fetch data</h2>
                     )
