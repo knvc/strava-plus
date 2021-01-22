@@ -1,5 +1,6 @@
 import "./UserConfirm.css";
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 
 class UserConfirm extends Component {
     state = {
@@ -42,8 +43,11 @@ class UserConfirm extends Component {
                 ) : ( 
                     this.state.user.athlete ? (
                         <React.Fragment>
-                            <h3 className="h3 mb-3 font-weight-normal">Are you {this.state.user.athlete.firstname} {this.state.user.athlete.lastname}?</h3>
                             <img src={this.state.user.athlete.profile} />
+                            <h3 className="h3 mt-3 font-weight-normal">Are you {this.state.user.athlete.firstname} {this.state.user.athlete.lastname}?</h3>
+                            <Link className="mt-3" to ='/'>
+                                <button type="button" class="btn btn-primary">Proceed</button>
+                            </Link>
                         </React.Fragment>
                     ) : (
                         <h2 className="h3 mb-3 font-weight-normal">Error: Could not fetch data</h2>
