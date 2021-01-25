@@ -46,7 +46,7 @@ class UserConfirm extends Component {
                             <img src={this.state.user.athlete.profile} />
                             <h3 className="h3 mt-3 font-weight-normal">Are you {this.state.user.athlete.firstname} {this.state.user.athlete.lastname}?</h3>
                             <Link className="mt-3" to ='/'>
-                                <button type="button" class="btn btn-primary">Proceed</button>
+                                <button type="button" className="btn btn-primary">Proceed</button>
                             </Link>
                         </React.Fragment>
                     ) : (
