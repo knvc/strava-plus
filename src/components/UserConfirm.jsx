@@ -39,18 +39,19 @@ class UserConfirm extends Component {
         return ( 
             <React.Fragment>
                 { this.state.loading ? (
-                    <h2 className="h3 mb-3 font-weight-normal">Loading...</h2>
+                    <p>Loading...</p>
                 ) : ( 
                     this.state.user.athlete ? (
                         <React.Fragment>
                             <img src={this.state.user.athlete.profile} />
-                            <h3 className="h3 mt-3 font-weight-normal">Are you {this.state.user.athlete.firstname} {this.state.user.athlete.lastname}?</h3>
-                            <Link className="mt-3" to ='/'>
-                                <button type="button" className="btn btn-primary">Proceed</button>
+                            <h1 className="title is-4">Confirm your profile.</h1>
+                            <p>Are you {this.state.user.athlete.firstname} {this.state.user.athlete.lastname}?</p>
+                            <Link to ='/'>
+                                <button className="button">Proceed</button>
                             </Link>
                         </React.Fragment>
                     ) : (
-                        <h2 className="h3 mb-3 font-weight-normal">Error: Could not fetch data</h2>
+                        <p>Please click on relogin to authenticate!</p>
                     )
                 )}
             </React.Fragment>
