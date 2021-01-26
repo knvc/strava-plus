@@ -8,20 +8,20 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="App">
-          <header className="App-header">
-            <Router>
-              <Switch>
+        <Router>
+          <Switch>
+            <div className="App">
+              <header className="App-header">
                 <Route exact path="/">
                   <Login />
                 </Route>
                 <Route path="/confirm">
                   <UserConfirm />
                 </Route>
-              </Switch>
-            </Router>
-          </header>
-        </div>
+              </header>
+            </div>
+          </Switch>
+        </Router>
       </React.Fragment>
     );
   }
