@@ -1,8 +1,8 @@
-import "./UserConfirm.css";
+import "./LoginProceed.css";
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 
-class UserConfirm extends Component {
+class LoginProceed extends Component {
     state = {
         loading : true,
         user : {}
@@ -59,4 +59,4 @@ class UserConfirm extends Component {
     }
 }
  
-export default UserConfirm;
+export default LoginProceed;
