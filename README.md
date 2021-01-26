@@ -11,6 +11,11 @@ A web application that adds extra running features to Strava.
 
 Thinking about an awesome feature? Add a request: https://forms.gle/DzLHn7F6AJqZzMS97
 
+## Powered by
+
+<img src="https://reactjs.org/logo-og.png" />
+<img src="https://bulma.io/images/bulma-logo.png" />
+
 ## Available Scripts
 
 In the project directory, you can run:
