@@ -11,10 +11,10 @@ A web application that adds extra running features to Strava.
 
 Thinking about an awesome feature? Add a request: https://forms.gle/DzLHn7F6AJqZzMS97
 
-## Powered by
+## Proudly powered by
 
-<img src="https://reactjs.org/logo-og.png" />
-<img src="https://bulma.io/images/bulma-logo.png" />
+<a href="https://reactjs.org/" target="_blank"><img src="https://reactjs.org/logo-og.png" alt="React" /></a>
+<a href="https://bulma.io/" target="_blank"><img src="https://bulma.io/images/bulma-logo.png" alt="Bulma" /></a>
 
 ## Available Scripts
 
