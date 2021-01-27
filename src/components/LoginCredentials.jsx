@@ -26,7 +26,7 @@ class LoginCredentials extends Component {
         localStorage.setItem('client_secret', JSON.stringify(this.state.client_secret));
 
         window.location = 'https://www.strava.com/oauth/authorize?client_id=' + this.state.client_id + 
-        '&response_type=code&redirect_uri=http://localhost:3000/confirm' + 
+        '&response_type=code&redirect_uri=http://localhost:3000/' + 
         '&approval_prompt=auto&scope=read,read_all,profile:read_all,profile:write,activity:read,activity:read_all,activity:write';
     }
     render() { 
