@@ -43,12 +43,30 @@ class LoginProceed extends Component {
                 ) : ( 
                     this.state.user.athlete ? (
                         <React.Fragment>
-                            <img src={this.state.user.athlete.profile} />
-                            <h1 className="title is-4">Confirm your profile.</h1>
-                            <p>Are you {this.state.user.athlete.firstname} {this.state.user.athlete.lastname}?</p>
-                            <Link to ='/'>
-                                <button className="button">Proceed</button>
-                            </Link>
+                            
+                            <article class="media">
+                              <figure class="media-left">
+                                <p class="image is-64x64">
+                                  <img src={this.state.user.athlete.profile} />
+                                </p>
+                              </figure>
+                              <div class="media-content">
+                                <div class="content">
+                                  <p>
+                                   <strong>Are you {this.state.user.athlete.firstname} {this.state.user.athlete.lastname}?</strong><br/>
+                                   
+                                      Confirm your profile by clicking on 'proceed'.
+                                  </p>
+                                </div>
+                              </div>
+                            </article>
+                            <div class="field is-grouped">
+                              <p class="control">
+                                <a class="button">
+                                  Proceed
+                                </a>
+                              </p>
+                            </div>                      
                         </React.Fragment>
                     ) : (
                         <p>Please click on relogin to authenticate!</p>
