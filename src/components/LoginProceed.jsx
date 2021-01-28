@@ -44,14 +44,14 @@ class LoginProceed extends Component {
                     this.state.user.athlete ? (
                         <React.Fragment>
                             
-                            <article class="media">
-                              <figure class="media-left">
-                                <p class="image is-64x64">
+                            <article className="media">
+                              <figure className="media-left">
+                                <p className="image is-64x64">
                                   <img src={this.state.user.athlete.profile} />
                                 </p>
                               </figure>
-                              <div class="media-content">
-                                <div class="content">
+                              <div className="media-content">
+                                <div className="content">
                                   <p>
                                    <strong>Are you {this.state.user.athlete.firstname} {this.state.user.athlete.lastname}?</strong><br/>
                                    
@@ -60,9 +60,9 @@ class LoginProceed extends Component {
                                 </div>
                               </div>
                             </article>
-                            <div class="field is-grouped">
-                              <p class="control">
-                                <a class="button">
+                            <div className="field is-grouped">
+                              <p className="control">
+                                <a className="button">
                                   Proceed
                                 </a>
                               </p>
