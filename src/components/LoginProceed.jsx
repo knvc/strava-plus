@@ -62,8 +62,13 @@ class LoginProceed extends Component {
                             </article>
                             <div className="field is-grouped my-3">
                               <p className="control">
-                                <a href="#" className="button">
-                                  Proceed
+                                <a href="#" className="button is-danger">
+                                  No
+                                </a>
+                              </p>
+                              <p className="control">
+                                <a href="#" className="button is-success">
+                                  Yes, that's me!
                                 </a>
                               </p>
                             </div>                      
