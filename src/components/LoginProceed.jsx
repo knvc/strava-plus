@@ -37,6 +37,7 @@ class LoginProceed extends Component {
     render() { 
         return ( 
             <React.Fragment>
+              <div class="component-login--proceed mt-5">
                 { this.state.loading ? (
                     <p>Loading...</p>
                 ) : ( 
@@ -59,7 +60,7 @@ class LoginProceed extends Component {
                                 </div>
                               </div>
                             </article>
-                            <div className="field is-grouped">
+                            <div className="field is-grouped my-3">
                               <p className="control">
                                 <a href="#" className="button">
                                   Proceed
@@ -71,6 +72,7 @@ class LoginProceed extends Component {
                         <p>Please click on relogin to authenticate!</p>
                     )
                 )}
+                </div>
             </React.Fragment>
          );
     }

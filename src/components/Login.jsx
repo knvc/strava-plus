@@ -6,12 +6,14 @@ import LoginProceed from "./LoginProceed";
 class Login extends Component {
     render() { 
         return ( 
-            <div className="columns is-centered my-2 px-5">
-                <div className="column is-two-fifths">
-                    <LoginCredentials/>
-                    <LoginProceed/>
-                </div>
-            </div>
+          <div class="component-login">
+              <div className="columns is-centered my-2 px-5">
+                  <div className="column is-two-fifths">
+                      <LoginCredentials/>
+                      <LoginProceed/>
+                  </div>
+              </div>
+          </div>
          );
     }
 }
