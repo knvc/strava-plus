@@ -38,7 +38,7 @@ class LoginCredentials extends Component {
                       <div className="field">
                                 <label className="label" htmlFor="inputClientId">Client ID</label>
                                 <div className="control">
-                                    <input className="input" id="inputClientId" type="text" value={this.state.client_id} onChange={(e) => this.setState({ client_id: e.target.value})} placeholder="Client Id" required autoFocus placeholder="Text input" />
+                                    <input className="input" id="inputClientId" type="text" value={this.state.client_id} onChange={(e) => this.setState({ client_id: e.target.value})} placeholder="Client Id" required autoFocus />
                                 </div>
                             </div>
                             <div className="field">

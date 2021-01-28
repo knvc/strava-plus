@@ -1,7 +1,6 @@
-import "./App.css";
 import Login from "./components/Login.jsx";
 import React, { Component } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 class App extends Component {
   render() {
@@ -9,13 +8,9 @@ class App extends Component {
       <React.Fragment>
         <Router>
           <Switch>
-            <div className="App">
-              <header className="App-header">
-                <Route exact path="/">
-                  <Login />
-                </Route>
-              </header>
-            </div>
+            <Route exact path="/">
+              <Login />
+            </Route>
           </Switch>
         </Router>
       </React.Fragment>

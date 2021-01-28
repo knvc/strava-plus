@@ -1,6 +1,5 @@
 import "./LoginProceed.css";
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
 
 class LoginProceed extends Component {
     state = {
@@ -47,7 +46,7 @@ class LoginProceed extends Component {
                             <article className="media">
                               <figure className="media-left">
                                 <p className="image is-64x64">
-                                  <img src={this.state.user.athlete.profile} />
+                                  <img src={this.state.user.athlete.profile} alt="profile" />
                                 </p>
                               </figure>
                               <div className="media-content">
@@ -62,7 +61,7 @@ class LoginProceed extends Component {
                             </article>
                             <div className="field is-grouped">
                               <p className="control">
-                                <a className="button">
+                                <a href="#" className="button">
                                   Proceed
                                 </a>
                               </p>
