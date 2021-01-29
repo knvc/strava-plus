@@ -37,7 +37,7 @@ class LoginProceed extends Component {
     render() { 
         return ( 
             <React.Fragment>
-              <div class="component-login--proceed mt-5">
+              <div className="component-login--proceed mt-5">
                 { this.state.loading ? (
                     <p>Loading...</p>
                 ) : ( 

@@ -32,7 +32,7 @@ class LoginCredentials extends Component {
     render() { 
         return ( 
             <React.Fragment>
-              <div class="component-login--credentials">
+              <div className="component-login--credentials">
                 <img src={logo} alt="Logo" width="100" height="100" className="my-4" />
                 <h1 className="title is-4">Sign in to Strava-Plus</h1>
                     <form onSubmit={this.handleAuthorize}>
